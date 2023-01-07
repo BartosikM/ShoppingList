@@ -14,15 +14,28 @@
     
     <div class="wrapper">
         <div class="top">
-            <input type="text" placeholder="wpisz nazwę produktu" id="input">
+            <input type="text" placeholder="wpisz nazwę produktu" class="mainInput">
             <button class="add">Dodaj</button>
-          
+            <button class="clear">Wyczyść listę</button>
         </div>
-          <p class="error">Brak nazwy produktu</p>
+
+          <p class="error"></p>
+
         <ul class="list">
-            <li></li>
+           
         </ul>
+        
+        <div><button onClick="window.print()" class="print"> Wydrukuj </button></div>
     </div>
+
+    <div class="popup">
+            <input type="text" class="popupInput" placeholder="Wpisz poprawioną nazwę produktu">
+            <button class="popupAddBtn">Popraw</button>
+            <button class="popupCloseBtn">Anuluj</button>
+            
+        </div>
+
+
 
     <script src="script.js"></script>
 </body>

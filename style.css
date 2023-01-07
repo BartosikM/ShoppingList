@@ -8,9 +8,10 @@
 body{
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(240, 230, 230);
+    background: rgb(217, 217, 217);
     font-family: 'Montserrat', sans-serif;
 }
 .wrapper{
@@ -18,45 +19,186 @@ body{
     background-color: white;
     box-shadow: 0 0 5px rgb(93, 92, 92);
     border: none;
-    
-
+    border-radius: 20px;
 }
 
-input{
-    width: 100%;
+.mainInput{
+    width: 570px;
     min-height: 100px;
     max-height: min-content;
-    text-align: center;
+    text-align: start;
+    padding-left: 50px;
     display: flex;
     flex-direction: column;
     font-size: 18px;
-    color: rgb(64, 24, 24);
-    border: none;
+    border: 1px solid rgb(188, 180, 180);
+    margin: 15px auto;
+    border-radius: 10px;
 }
 .add{
-    background-color: rgb(243, 43, 146);
+    background-color:#08a334;
     color: white;
     font-size: 20px;
     width: 80%;
-    border-radius: 10px;
+    border-radius: 14px;
     border: none;
     padding-bottom: 10px;
     padding-top: 10px;
     margin: 10px 55px;
-    cursor: pointer;
     
 }
 .add:hover{
-    background-color: rgb(260,83,188);
+    background-color: white;
+    color: #08a334;
+    border: 2px solid #08a334;
 }
+
+.clear{
+    background-color: tomato;
+    color: white;
+    font-size: 17px;
+    width: 40%;
+    margin: 15px 20px 15px 300px;
+    border-radius: 14px;
+    border: none;
+    padding: 7px;
+   
+}
+.clear:hover{
+    background-color: white;
+    color: tomato;
+    border: 2px solid tomato;
+}
+
 .error{
     color: rgb(222, 10, 10);
     text-align: center;
     font-size: 19px;
-    display: none;
+    margin-top: 15px;
 }
-.list li{
+
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
     list-style: none;
-    margin: 30px 40px;
-    font-size: 17px;
+    margin: 5px 20px;
 }
+.tools{
+    display: inline-block;
+}
+.tools button{
+    border: none;
+    padding: 5px 8px;
+    border-radius: 8px;
+    margin: 5px;
+    color: white;
+}
+
+.tools .remove{
+    background-color: rgb(222, 89, 89);
+}
+.tools .remove:hover{
+    background-color: white;
+    color: rgb(222,89,89);
+    border: 2px solid rgb(222,89,89);
+}
+.tools .done{
+    background-color: #056a21;
+}
+.tools .done:hover{
+    background-color: white;
+    color: #056a21;
+    border: 2px solid #056a21;
+}
+.tools .edit{
+    background-color: royalblue;
+}
+.tools .edit:hover{
+    background-color: white;
+    color: royalblue;
+    border: 2px solid royalblue;
+}
+.check{
+    text-decoration: line-through;
+}
+.popup{
+    width: 600px;
+    background-color: white;
+    position: absolute;
+    top: -700px;
+    height: 100px;
+    border: 1px solid rgb(139, 77, 161);
+    border-radius: 20px;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+
+}
+.popup.active{
+    top: 700px;
+    transition: all .4s;
+}
+.popup input{
+    margin: 0 20px;
+    height: 30px;
+    width: 65%;
+    border: 1px solid rgb(188, 180, 180);
+    border-radius: 10px;
+}
+.popup .popupAddBtn{
+    background-color: royalblue;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 8px;
+}
+.popupAddBtn:hover{
+    background-color: white;
+    color: royalblue;
+    border: 2px solid royalblue;
+}
+.popup .popupCloseBtn{
+    background-color: rgb(222, 89, 89);
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+.popup .popupCloseBtn:hover{
+    background-color: white;
+    color: rgb(222,89,89);
+    border: 2px solid rgb(222,89,89);
+}
+
+ .popup.popupErrorInfo .popupInput{
+    border: 2px solid red;
+
+ }
+
+.print{
+    margin: 20px 30px;
+    background-color: royalblue;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 8px;
+    border: none;
+    
+}
+.print:hover{
+    background-color: white;
+    color: royalblue;
+    border: 2px solid royalblue;
+}
+button:active{
+    transform: scale(0.95);
+    transition: all .1s ease-in-out;
+}
+button{
+    cursor: pointer;
+}
+

@@ -11,8 +11,14 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgb(217, 217, 217);
+    background: rgb(222, 213, 213);
     font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-size: 40px;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+    color: rgb(160, 115, 115);
 }
 .wrapper{
     width: 600px;
@@ -36,7 +42,7 @@ body{
     border-radius: 10px;
 }
 .add{
-    background-color:#08a334;
+    background-color:rgb(141, 104, 104);
     color: white;
     font-size: 20px;
     width: 80%;
@@ -49,12 +55,12 @@ body{
 }
 .add:hover{
     background-color: white;
-    color: #08a334;
-    border: 2px solid #08a334;
+    color: rgb(141,104,104);
+    border: 2px solid rgb(141,104,104);
 }
 
 .clear{
-    background-color: tomato;
+    background-color: rgb(90, 148, 122);
     color: white;
     font-size: 17px;
     width: 40%;
@@ -66,8 +72,8 @@ body{
 }
 .clear:hover{
     background-color: white;
-    color: tomato;
-    border: 2px solid tomato;
+    color: rgb(90,148,122);
+    border: 2px solid rgb(90,148,122);
 }
 
 .error{
@@ -98,28 +104,28 @@ li{
 }
 
 .tools .remove{
-    background-color: rgb(222, 89, 89);
+    background-color: rgb(191, 148, 148);
 }
 .tools .remove:hover{
     background-color: white;
-    color: rgb(222,89,89);
-    border: 2px solid rgb(222,89,89);
+    color: rgb(191,148,148);
+    border: 2px solid rgb(191,148,148);
 }
 .tools .done{
-    background-color: #056a21;
+    background-color: rgb(90,148,122);
 }
 .tools .done:hover{
     background-color: white;
-    color: #056a21;
-    border: 2px solid #056a21;
+    color: rgb(90,148,122);
+    border: 2px solid rgb(90,148,122);
 }
 .tools .edit{
-    background-color: royalblue;
+    background-color: rgb(123, 140, 189);
 }
 .tools .edit:hover{
     background-color: white;
-    color: royalblue;
-    border: 2px solid royalblue;
+    color: rgb(123,140,189);
+    border: 2px solid rgb(123,140,189);
 }
 .check{
     text-decoration: line-through;
@@ -150,7 +156,7 @@ li{
     border-radius: 10px;
 }
 .popup .popupAddBtn{
-    background-color: royalblue;
+    background-color: rgb(123,140,189);
     color: white;
     border: none;
     padding: 5px 8px;
@@ -158,11 +164,11 @@ li{
 }
 .popupAddBtn:hover{
     background-color: white;
-    color: royalblue;
-    border: 2px solid royalblue;
+    color: rgb(123,140,189);
+    border: 2px solid rgb(123, 140, 189);
 }
 .popup .popupCloseBtn{
-    background-color: rgb(222, 89, 89);
+    background-color: rgb(191,148,148);
     color: white;
     border: none;
     padding: 5px 8px;
@@ -171,8 +177,8 @@ li{
 }
 .popup .popupCloseBtn:hover{
     background-color: white;
-    color: rgb(222,89,89);
-    border: 2px solid rgb(222,89,89);
+    color: rgb(191,148,148);
+    border: 2px solid rgb(191,148,148);
 }
 
  .popup.popupErrorInfo .popupInput{
@@ -182,7 +188,7 @@ li{
 
 .print{
     margin: 20px 30px;
-    background-color: royalblue;
+    background-color: rgb(123,140,189);
     color: white;
     padding: 5px 8px;
     border-radius: 8px;
@@ -191,8 +197,8 @@ li{
 }
 .print:hover{
     background-color: white;
-    color: royalblue;
-    border: 2px solid royalblue;
+    color: rgb(123,140,189);
+    border: 2px solid rgb(123,140,189);
 }
 button:active{
     transform: scale(0.95);
